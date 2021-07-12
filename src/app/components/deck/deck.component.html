@@ -1,0 +1,16 @@
+
+
+<div>
+<button style="background-color: rgb(226, 10, 10); margin: 2cm; color: white; padding: 0.25cm;" routerLink="/shuffle" > Jogador 2</button>
+<button style="background-color: rgb(226, 10, 10); margin: 2cm; color: white; padding: 0.25cm;" routerLink="/notFound"> 404 Test</button>
+<h3 style="text-align: center; padding-bottom: 1cm; "> Jogador 1,  {{mao}} <br></h3>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col mb-5" *ngFor="let card of cards">
+            <img [src]="card.image" />
+        </div>
+    </div>
+</div>
+
